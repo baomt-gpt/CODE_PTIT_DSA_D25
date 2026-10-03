@@ -42,3 +42,41 @@ int main(){
 
     return 0;
 }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void backtrack(int i, int n, vector<int>& a, vector<bool>& used){
+//     if(i == n){
+//         for(int j = 0; j < n; j++){
+//             cout << a[j];
+//         }
+//         cout << " ";
+//         return;
+//     }
+//     for(int val = 1; val <= n; val++){
+//         if(used[val] == false){
+//             a[i] = val;
+//             used[val] = true;
+//             backtrack(i + 1, n, a, used);
+//             used[val]= false;
+//         }
+//     }
+// }
+
+// int main(){
+//     ios::sync_with_stdio(false);
+//     cin.tie(NULL);
+
+//     int q; cin >> q;
+//     while(q--){
+//         int n; cin >> n;
+//         vector<int> a(n);
+//         vector<bool> used(n + 1, false);
+//         backtrack(0, n, a, used);
+//         cout << "\n";    
+//     }
+
+//     return 0;
+// }
